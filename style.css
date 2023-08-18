@@ -1,0 +1,496 @@
+/* 
+Color pallete. This section defines variables for the color pallete,
+so that we can refer to particular colors by name instead of hexadecimal values.
+This is applied to the 'root' psuedo-element, which just means that these color
+variables are available to be used anywhere in our html document
+*/
+:root {
+    /* add in other color variables for color pallete */
+    --white-font: #FFFFFF;
+    --black-font: #000000;
+    --navy-font: #212E5A;
+    --dark-purple-font: #9E285C;
+}
+
+/* Defines the main container size, we are limiting to 72em max and centring in the viewport */
+.main-container {
+    display: flex;
+    max-width: 72em;
+    margin: 0 auto;
+    font-family: Inder;
+    color: var(--white-font);
+}
+
+/* Here we define the aspects of style of our elements other than their grid layout */
+.banner {
+    display: flex;
+    flex-direction: column;
+    background-color: #212E5A;
+}
+
+.banner-title {
+    text-align: center;
+    margin: auto;
+    font-size: 3.75em;
+    font-family: Stalinist One;
+}
+
+.banner-subtitle {
+    text-align: center;
+    margin: auto;
+    font-size: 2.25em;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
+.photo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+    margin: auto;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    background-color:#797596;
+}
+
+.introduction-blurb {
+    text-align: center;
+    margin: auto;
+    font-size: 3em;
+    padding: .5em;
+    line-height: .9em;
+    font-family: Covered By Your Grace;
+}
+
+.quote1 {
+    display: flex;
+    flex-direction: column;
+    background-color:#D1C6AD;
+    color: var(--navy-font);
+}
+
+.quote-blurb-1 {
+    text-align: center;
+    margin: auto;
+    font-size: 1.75em;
+    padding: .5em;
+}
+
+.quote-author-1 {
+    text-align: center;
+    margin: auto;
+    font-size: 1.25em;
+    padding-bottom: .5em;
+}
+
+.quote2 {
+    display: flex;
+    flex-direction: column;
+    background-color:#9E285C;
+}
+
+.quote-blurb-2 {
+    text-align: center;
+    margin: auto;
+    font-size: 3em;
+    padding: .5em;
+    padding-bottom: 0em;
+}
+
+.quote-author-2 {
+    text-align: center;
+    margin: auto;
+    font-size: 2.25em;
+    padding-bottom: .5em;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    background-color:#BBADA0;
+}
+
+.question-blurb {
+    text-align: center;
+    margin: auto;
+    font-size: 3em;
+    line-height: .9em;
+    color: var(--navy-font);
+    font-family: Covered By Your Grace;
+    padding: .5em;
+}
+
+.future-possibilities {
+    display: flex;
+    flex-direction: column;
+    background-color:#797596;
+}
+
+.future-possibilities-title {
+    text-align: center;
+    margin: auto;
+    font-size: 3em;
+    padding: .5em;  
+}
+
+.future-interaction {
+    display: flex;
+    flex-direction: column;
+}
+
+.future-interaction-title {
+    text-align: center;
+    background-color:#D1C6AD;
+    font-size: 4em;
+    color: var(--navy-font);
+    font-family: Covered By Your Grace;
+    padding: .2em;
+}
+
+.future-interaction-blurb {
+    text-align: center;
+    margin: auto;
+    background-color:#9E285C;
+    font-size: 2em;
+    padding: .5em;
+}
+
+.future-relationship {
+    display: flex;
+    flex-direction: column;
+}
+
+.future-relationship-title {
+    text-align: center;
+    background-color:#D1C6AD;
+    font-size: 4em;
+    color: var(--navy-font);
+    font-family: Covered By Your Grace;
+    padding: .2em;
+}
+
+.future-relationship-blurb {
+    text-align: center;
+    margin: auto;
+    background-color:#212E5A;
+    font-size: 2em;
+    padding: .5em;
+}
+
+/* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
+.photo-rect-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-rect {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-size: 2.5em;
+    text-align: center;
+    line-height: .9em;
+    color: var(--dark-purple-font);
+    font-family: Covered By Your Grace;
+}
+
+.class-name {
+    font-size: 2.5em;
+    text-align: center;
+    line-height: .9em;
+    color: var(--dark-purple-font);
+    font-family: Covered By Your Grace;
+}
+
+.class-semester {
+    font-size: 2.5em;
+    text-align: center;
+    line-height: .9em;
+    color: var(--dark-purple-font);
+    font-family: Covered By Your Grace;
+}
+
+.sources {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1em;
+    color: var(--navy-font);
+}
+
+/* now we create names for the grid areas for specific elements */
+#banner {
+    grid-area: ban;
+}
+
+#introduction1 {
+    grid-area: in1;
+}
+
+#introduction2 {
+    grid-area: in2;
+}
+
+#photo1 {
+    grid-area: ph1;
+}
+
+#photo2 {
+    grid-area: ph2;
+}
+
+#photo3 {
+    grid-area: ph3;
+}
+
+#photo4 {
+    grid-area: ph4;
+}
+
+#photo5 {
+    grid-area: ph5;
+}
+
+#photo6 {
+    grid-area: ph6;
+}
+
+#photo7 {
+    grid-area: ph7;
+}
+
+#photo8 {
+    grid-area: ph8;
+}
+
+#photo9 {
+    grid-area: ph9;
+}
+
+#infographic1 {
+    grid-area: ig1;
+}
+
+#infographic2 {
+    grid-area: ig2;
+}
+
+#infographic3 {
+    grid-area: ig3;
+}
+
+#quote1 {
+    grid-area: qo1;
+}
+
+#quote2 {
+    grid-area: qo2;
+}
+
+#question1 {
+    grid-area: qu1;
+}
+
+#futurePossibilities {
+    grid-area: fp;
+}
+
+#futureInteraction {
+    grid-area: fi;
+}
+
+#futureRelationship {
+    grid-area: fr;
+}
+
+#photoRect1 {
+    grid-area: pr1;
+}
+
+#photoRect2 {
+    grid-area: pr2;
+}
+
+#photoRect3 {
+    grid-area: pr3;
+}
+
+#photoRect4 {
+    grid-area: pr4;
+}
+
+#authorInfo {
+    grid-area: aui;
+}
+
+#sources {
+    grid-area: sou;
+}
+
+/* Use a flexible layout grid */
+.main-container {
+    display: grid;
+    column-gap: 1em;
+}
+  
+/* 
+Responsive Layout breakpoints. We start 'mobile-first' i.e. we define how the layout should look
+for the smallest screen sizes. In this case we want a single column that spans the main container.
+Because this CSS definition comes first, it will apply by default. Then we override it below with 
+media queries for progressively bigger screen widths
+*/
+
+/* grid-template for mobile phone layout */
+.main-container {
+    grid-template:
+    "ban ban ban ban" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "in1 in1 in2 in2" minmax(8em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "ph1 ph1 ph1 ph1" minmax(24em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "ph2 ph2 ph2 ph2" minmax(24em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "qo1 qo1 qo1 qo1" minmax(8em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "ph3 ph3 ph3 ph3" minmax(12em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "ph4 ph4 ph4 ph4" minmax(12em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "ph5 ph5 ph5 ph5" minmax(12em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "qo2 qo2 qo2 qo2" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "ig1 ig1 ig1 ig1" minmax(12em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "ig2 ig2 ig2 ig2" minmax(10em, auto)
+    "ig3 ig3 ig3 ig3" minmax(8em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "ph6 ph6 ph6 ph6" minmax(24em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "ph7 ph7 ph7 ph7" minmax(24em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "ph8 ph8 ph8 ph8" minmax(24em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "qu1 qu1 qu1 qu1" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "fp  fp  fp  fp " minmax(4em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "ph9 ph9 ph9 ph9" minmax(24em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "fi  fi  fi  fi " minmax(10em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "fr  fr  fr  fr " minmax(10em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "pr1 pr1 pr2 pr2" minmax(8em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "pr3 pr3 pr4 pr4" minmax(8em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "aui aui aui aui" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "sou sou sou sou" minmax(22em, auto)
+    " .   .   .   . " minmax(2em, auto)
+}
+
+
+/* grid-template for tablet layout */
+@media (min-width: 50em) {
+    .main-container {
+        grid-template:
+        "ban ban ban ban ban ban ban ban" minmax(10em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "in1 in1 in1 in1 in2 in2 in2 in2" minmax(12em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "ph1 ph1 ph1 ph1 ph2 ph2 ph2 ph2" minmax(26em, auto)
+        "qo1 qo1 qo1 qo1 qo1 qo1 qo1 qo1" minmax(8em, auto)
+        " .   .   .   .   .   .   .   . " minmax(4em, auto)
+        "ph3 ph3 ph3 ph3 ph4 ph4 ph4 ph4" minmax(16em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "ph5 ph5 ph5 ph5 qo2 qo2 qo2 qo2" minmax(16em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "ig1 ig1 ig1 ig1 ig1 ig1 ig1 ig1" minmax(26em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "ig2 ig2 ig2 ig2 ig2 ig2 ig2 ig2" minmax(22em, auto)
+        "ig3 ig3 ig3 ig3 ig3 ig3 ig3 ig3" minmax(18em, auto)
+        " .   .   .   .   .   .   .   . " minmax(4em, auto)
+        "ph6 ph6 ph6 ph6 ph7 ph7 ph7 ph7" minmax(36em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .   .  ph8 ph8 ph8 ph8  .   . " minmax(36em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "qu1 qu1 qu1 qu1 qu1 qu1 qu1 qu1" minmax(8em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "fp  fp  fp  fp  fp  fp  fp  fp " minmax(6em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .   .  ph9 ph9 ph9 ph9  .   . " minmax(32em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .  fi  fi  fi  fi  fi  fi   . " minmax(16em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .  fr  fr  fr  fr  fr  fr   . " minmax(14em, auto)
+        " .   .   .   .   .   .   .   . " minmax(4em, auto)
+        " .  pr1 pr1 pr1 pr2 pr2 pr2  . " minmax(14em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .  pr3 pr3 pr3 pr4 pr4 pr4  . " minmax(14em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "aui aui aui aui aui aui aui aui" minmax(8em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "sou sou sou sou sou sou sou sou" minmax(24em, auto)
+        " .   .   .   .   .   .   .   . " minmax(2em, auto)
+    }
+}
+
+/* grid-template for desktop layout */
+@media (min-width: 75em) {
+    .main-container {
+        grid-template:
+        "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(12em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "in1 in1 in1 in1 in1 in1 in1 in2 in2 in2 in2 in2" minmax(14em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "ph1 ph1 ph1 ph1 ph1 ph1 ph1 ph2 ph2 ph2 ph2 ph2" minmax(42em, auto)
+        "qo1 qo1 qo1 qo1 qo1 qo1 qo1 qo1 qo1 qo1 qo1 qo1" minmax(8em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+        "ph3 ph3 ph3 ph3 ph3 ph3 ph3 ph4 ph4 ph4 ph4 ph4" minmax(24em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "ph5 ph5 ph5 ph5 ph5 ph5 ph5 qo2 qo2 qo2 qo2 qo2" minmax(24em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+        "ig1 ig1 ig1 ig1 ig1 ig1 ig1 ig1 ig1 ig1 ig1 ig1" minmax(38em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        " .   . ig2 ig2 ig2 ig2 ig2 ig2 ig2 ig2 ig2  . " minmax(22em, auto)
+        " .   . ig3 ig3 ig3 ig3 ig3 ig3 ig3 ig3 ig3  . " minmax(18em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+        "ph6 ph6 ph6 ph6 ph7 ph7 ph7 ph7 ph8 ph8 ph8 ph8" minmax(30em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "qu1 qu1 qu1 qu1 qu1 qu1 qu1 qu1 qu1 qu1 qu1 qu1" minmax(8em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "fp  fp  fp  fp  fp  fp  fp  fp  fp  fp  fp  fp " minmax(8em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "ph9 ph9 ph9 ph9 ph9 ph9  .   .   .   .   .   . " minmax(2em, auto)
+        "ph9 ph9 ph9 ph9 ph9 ph9 fi  fi  fi  fi  fi  fi " minmax(18em, auto)
+        "ph9 ph9 ph9 ph9 ph9 ph9  .   .   .   .   .   . " minmax(6em, auto)
+        "ph9 ph9 ph9 ph9 ph9 ph9 fr  fr  fr  fr  fr  fr " minmax(14em, auto)
+        "ph9 ph9 ph9 ph9 ph9 ph9  .   .   .   .   .   . " minmax(2em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+        "pr1 pr1 pr1 pr1 pr2 pr2 pr2 pr3 pr3 pr4 pr4 pr4" minmax(14em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "aui aui aui aui aui aui aui aui aui aui aui aui" minmax(8em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "sou sou sou sou sou sou sou sou sou sou sou sou" minmax(24em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+    }
+}
