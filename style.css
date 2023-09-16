@@ -406,6 +406,7 @@ media queries for progressively bigger screen widths
     " .   .   .   . " minmax(2em, auto)
     "sou sou sou sou" minmax(22em, auto)
     " .   .   .   . " minmax(2em, auto)
+    / 1fr 1fr 1fr 1fr
 }
 
 
@@ -451,6 +452,7 @@ media queries for progressively bigger screen widths
         " .   .   .   .   .   .   .   . " minmax(2em, auto)
         "sou sou sou sou sou sou sou sou" minmax(24em, auto)
         " .   .   .   .   .   .   .   . " minmax(2em, auto)
+        / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
     }
 }
 
@@ -460,14 +462,14 @@ media queries for progressively bigger screen widths
         grid-template:
         "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(12em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "in1 in1 in1 in1 in1 in1 in1 in2 in2 in2 in2 in2" minmax(14em, auto)
+        "in1 in1 in1 in1 in1 in1 in2 in2 in2 in2 in2 in2" minmax(14em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "ph1 ph1 ph1 ph1 ph1 ph1 ph1 ph2 ph2 ph2 ph2 ph2" minmax(42em, auto)
+        "ph1 ph1 ph1 ph1 ph1 ph1 ph2 ph2 ph2 ph2 ph2 ph2" minmax(42em, auto)
         "qo1 qo1 qo1 qo1 qo1 qo1 qo1 qo1 qo1 qo1 qo1 qo1" minmax(8em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
-        "ph3 ph3 ph3 ph3 ph3 ph3 ph3 ph4 ph4 ph4 ph4 ph4" minmax(24em, auto)
+        "ph3 ph3 ph3 ph3 ph3 ph3 ph4 ph4 ph4 ph4 ph4 ph4" minmax(24em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-        "ph5 ph5 ph5 ph5 ph5 ph5 ph5 qo2 qo2 qo2 qo2 qo2" minmax(24em, auto)
+        "ph5 ph5 ph5 ph5 ph5 ph5 qo2 qo2 qo2 qo2 qo2 qo2" minmax(24em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
         "ig1 ig1 ig1 ig1 ig1 ig1 ig1 ig1 ig1 ig1 ig1 ig1" minmax(38em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
@@ -486,11 +488,12 @@ media queries for progressively bigger screen widths
         "ph9 ph9 ph9 ph9 ph9 ph9 fr  fr  fr  fr  fr  fr " minmax(14em, auto)
         "ph9 ph9 ph9 ph9 ph9 ph9  .   .   .   .   .   . " minmax(2em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
-        "pr1 pr1 pr1 pr1 pr2 pr2 pr2 pr3 pr3 pr4 pr4 pr4" minmax(14em, auto)
+        "pr1 pr1 pr1 pr2 pr2 pr2 pr3 pr3 pr3 pr4 pr4 pr4" minmax(14em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
         "aui aui aui aui aui aui aui aui aui aui aui aui" minmax(8em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
         "sou sou sou sou sou sou sou sou sou sou sou sou" minmax(24em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
     }
 }
